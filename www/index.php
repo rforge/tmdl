@@ -26,7 +26,7 @@ echo '<?xml version="1.0" encoding="UTF-8"?>';
 <!-- R-Forge Logo -->
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
 <tr><td>
-<a href="http://r-forge.r-project.org/"><img src="http://<?php echo $themeroot; ?>/images/logo.png" border="0" alt="R-Forge Logo" /> </a> </td> </tr>
+<a href="http://r-forge.r-project.org/"><img src="http://<?php echo $themeroot; ?>/imagesrf/logo.png" border="0" alt="R-Forge Logo" /> </a> </td> </tr>
 </table>
 
 
@@ -43,7 +43,18 @@ echo $contents; } ?>
 
 <!-- end of project description -->
 
-<p> No content added. </p>
+<h2>This project is for you if you are</h2>
+<ul>
+  <li>working on TMDL;</li>
+  <li>tired doing routine operations in your favorite spreadsheet;</li>
+  <li>not satisfied with charting capabilities of your favorite spreadsheet.</li>
+<li></li>
+</ul>
+
+<h2>Example plots</h2>
+<img src="fdc.png" border="0" alt="Flow Duration Curve" />
+
+<img src="ldc.png" alt="Load Duration Curve" />
 
 <p> The <strong>project summary page</strong> you can find <a href="http://<?php echo $domain; ?>/projects/<?php echo $group_name; ?>/"><strong>here</strong></a>. </p>
 
