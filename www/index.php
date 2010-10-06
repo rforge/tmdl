@@ -46,9 +46,8 @@ echo $contents; } ?>
 <h2>This project is for you if you are</h2>
 <ul>
   <li>working on TMDL;</li>
-  <li>tired doing routine operations in your favorite spreadsheet;</li>
+  <li>tired from doing routine operations in your favorite spreadsheet;</li>
   <li>not satisfied with charting capabilities of your favorite spreadsheet.</li>
-<li></li>
 </ul>
 
 <h2>Example plots</h2>
