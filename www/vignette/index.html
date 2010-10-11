@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="iso-8859-1" ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">  
+<!--http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd-->  
+<html xmlns="http://www.w3.org/1999/xhtml"  
+> 
+<head><title></title> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" /> 
+<meta name="originator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" /> 
+<!-- xhtml --> 
+<meta name="src" content="vignette.tex" /> 
+<meta name="date" content="2010-10-11 15:14:00" /> 
+<link rel="stylesheet" type="text/css" href="vignette.css" /> 
+</head><body 
+>
+   <div class="fancyvrb" id="fancyvrb1">
+<a 
+ id="x1-3r1"></a><span 
+class="aesltt-10">&#x00A0;</span><span 
+class="aesltt-10">&#x00A0;&#x003E;</span><span 
+class="aesltt-10">&#x00A0;#</span><span 
+class="aesltt-10">&#x00A0;data</span><span 
+class="aesltt-10">&#x00A0;from</span><span 
+class="aesltt-10">&#x00A0;USGS</span><span 
+class="aesltt-10">&#x00A0;gage</span>
+<br class="fancyvrb" /><a 
+ id="x1-5r2"></a><span 
+class="aesltt-10">&#x00A0;</span><span 
+class="aesltt-10">&#x00A0;&#x003E;</span><span 
+class="aesltt-10">&#x00A0;#require(tmdl)</span>
+<br class="fancyvrb" /><a 
+ id="x1-7r3"></a><span 
+class="aesltt-10">&#x00A0;</span><span 
+class="aesltt-10">&#x00A0;&#x003E;</span><span 
+class="aesltt-10">&#x00A0;library(latticeExtra)</span>
+<br class="fancyvrb" /><a 
+ id="x1-9r4"></a><span 
+class="aesltt-10">&#x00A0;</span><span 
+class="aesltt-10">&#x00A0;&#x003E;</span><span 
+class="aesltt-10">&#x00A0;source("../R/tmdl.R")</span>
+<br class="fancyvrb" /><a 
+ id="x1-11r5"></a><span 
+class="aesltt-10">&#x00A0;</span><span 
+class="aesltt-10">&#x00A0;&#x003E;</span><span 
+class="aesltt-10">&#x00A0;#file</span><span 
+class="aesltt-10">&#x00A0;&#x003C;-</span><span 
+class="aesltt-10">&#x00A0;file.path(.path.package(</span><span 
+class="tcrm-1000">'</span><span 
+class="aesltt-10">tmdl</span><span 
+class="tcrm-1000">'</span><span 
+class="aesltt-10">),</span><span 
+class="aesltt-10">&#x00A0;</span><span 
+class="tcrm-1000">'</span><span 
+class="aesltt-10">data</span><span 
+class="tcrm-1000">'</span><span 
+class="aesltt-10">,</span><span 
+class="aesltt-10">&#x00A0;</span><span 
+class="tcrm-1000">'</span><span 
+class="aesltt-10">USGS_04015330_Knife_River.txt</span><span 
+class="tcrm-1000">'</span><span 
+class="aesltt-10">)</span>
+<br class="fancyvrb" /><a 
+ id="x1-13r6"></a><span 
+class="aesltt-10">&#x00A0;</span><span 
+class="aesltt-10">&#x00A0;&#x003E;</span><span 
+class="aesltt-10">&#x00A0;x</span><span 
+class="aesltt-10">&#x00A0;&#x003C;-</span><span 
+class="aesltt-10">&#x00A0;read.table("c:/workspace/tmdl/pkg/data/USGS_04015330_Knife_River.txt",</span>
+<br class="fancyvrb" /><a 
+ id="x1-15r7"></a><span 
+class="aesltt-10">&#x00A0;</span><span 
+class="aesltt-10">&#x00A0;+</span><span 
+class="aesltt-10">&#x00A0;</span><span 
+class="aesltt-10">&#x00A0;</span><span 
+class="aesltt-10">&#x00A0;</span><span 
+class="aesltt-10">&#x00A0;</span><span 
+class="aesltt-10">&#x00A0;skip</span><span 
+class="aesltt-10">&#x00A0;=</span><span 
+class="aesltt-10">&#x00A0;29,</span><span 
+class="aesltt-10">&#x00A0;as.is</span><span 
+class="aesltt-10">&#x00A0;=</span><span 
+class="aesltt-10">&#x00A0;TRUE)</span>
+<br class="fancyvrb" /><a 
+ id="x1-17r8"></a><span 
+class="aesltt-10">&#x00A0;</span><span 
+class="aesltt-10">&#x00A0;&#x003E;</span><span 
+class="aesltt-10">&#x00A0;names(x)</span><span 
+class="aesltt-10">&#x00A0;&#x003C;-</span><span 
+class="aesltt-10">&#x00A0;c("agency",</span><span 
+class="aesltt-10">&#x00A0;"site",</span><span 
+class="aesltt-10">&#x00A0;"date",</span><span 
+class="aesltt-10">&#x00A0;"cfs",</span><span 
+class="aesltt-10">&#x00A0;"status")</span>
+<br class="fancyvrb" /><a 
+ id="x1-19r9"></a><span 
+class="aesltt-10">&#x00A0;</span><span 
+class="aesltt-10">&#x00A0;&#x003E;</span><span 
+class="aesltt-10">&#x00A0;x$agency</span><span 
+class="aesltt-10">&#x00A0;&#x003C;-</span><span 
+class="aesltt-10">&#x00A0;NULL</span>
+<br class="fancyvrb" /><a 
+ id="x1-21r10"></a><span 
+class="aesltt-10">&#x00A0;</span><span 
+class="aesltt-10">&#x00A0;&#x003E;</span><span 
+class="aesltt-10">&#x00A0;x$site</span><span 
+class="aesltt-10">&#x00A0;&#x003C;-</span><span 
+class="aesltt-10">&#x00A0;NULL</span>
+<br class="fancyvrb" /><a 
+ id="x1-23r11"></a><span 
+class="aesltt-10">&#x00A0;</span><span 
+class="aesltt-10">&#x00A0;&#x003E;</span><span 
+class="aesltt-10">&#x00A0;x$status</span><span 
+class="aesltt-10">&#x00A0;&#x003C;-</span><span 
+class="aesltt-10">&#x00A0;NULL</span>
+<br class="fancyvrb" /><a 
+ id="x1-25r12"></a><span 
+class="aesltt-10">&#x00A0;</span><span 
+class="aesltt-10">&#x00A0;&#x003E;</span><span 
+class="aesltt-10">&#x00A0;x$cfs[x$cfs</span><span 
+class="aesltt-10">&#x00A0;==</span><span 
+class="aesltt-10">&#x00A0;"Ice"]</span><span 
+class="aesltt-10">&#x00A0;&#x003C;-</span><span 
+class="aesltt-10">&#x00A0;NA</span>
+<br class="fancyvrb" /><a 
+ id="x1-27r13"></a><span 
+class="aesltt-10">&#x00A0;</span><span 
+class="aesltt-10">&#x00A0;&#x003E;</span><span 
+class="aesltt-10">&#x00A0;x$cfs</span><span 
+class="aesltt-10">&#x00A0;&#x003C;-</span><span 
+class="aesltt-10">&#x00A0;as.numeric(x$cfs)</span>
+<br class="fancyvrb" /><a 
+ id="x1-29r14"></a><span 
+class="aesltt-10">&#x00A0;</span><span 
+class="aesltt-10">&#x00A0;&#x003E;</span><span 
+class="aesltt-10">&#x00A0;x$date</span><span 
+class="aesltt-10">&#x00A0;&#x003C;-</span><span 
+class="aesltt-10">&#x00A0;as.POSIXct(x$date,</span><span 
+class="aesltt-10">&#x00A0;format</span><span 
+class="aesltt-10">&#x00A0;=</span><span 
+class="aesltt-10">&#x00A0;"%Y-%m-%d")</span>
+<br class="fancyvrb" /><a 
+ id="x1-31r15"></a><span 
+class="aesltt-10">&#x00A0;</span><span 
+class="aesltt-10">&#x00A0;&#x003E;</span><span 
+class="aesltt-10">&#x00A0;pol</span><span 
+class="aesltt-10">&#x00A0;=</span><span 
+class="aesltt-10">&#x00A0;read.csv("c:/workspace/tmdl/pkg/data/water_chemistry_data_02026001_1974-07-01_2010-10-07.csv")</span>
+<br class="fancyvrb" /><a 
+ id="x1-33r16"></a><span 
+class="aesltt-10">&#x00A0;</span><span 
+class="aesltt-10">&#x00A0;&#x003E;</span><span 
+class="aesltt-10">&#x00A0;pol$date</span><span 
+class="aesltt-10">&#x00A0;=</span><span 
+class="aesltt-10">&#x00A0;as.POSIXct(pol$Timestamp)</span>
+<br class="fancyvrb" /><a 
+ id="x1-35r17"></a><span 
+class="aesltt-10">&#x00A0;</span><span 
+class="aesltt-10">&#x00A0;&#x003E;</span><span 
+class="aesltt-10">&#x00A0;pol$Timestamp</span><span 
+class="aesltt-10">&#x00A0;=</span><span 
+class="aesltt-10">&#x00A0;NULL</span>
+<br class="fancyvrb" /><a 
+ id="x1-37r18"></a><span 
+class="aesltt-10">&#x00A0;</span><span 
+class="aesltt-10">&#x00A0;&#x003E;</span><span 
+class="aesltt-10">&#x00A0;z</span><span 
+class="aesltt-10">&#x00A0;&#x003C;-</span><span 
+class="aesltt-10">&#x00A0;rankflow(x,</span><span 
+class="aesltt-10">&#x00A0;pol)</span>
+<br class="fancyvrb" /><a 
+ id="x1-39r19"></a><span 
+class="aesltt-10">&#x00A0;</span><span 
+class="aesltt-10">&#x00A0;&#x003E;</span><span 
+class="aesltt-10">&#x00A0;turb2tss</span><span 
+class="aesltt-10">&#x00A0;&#x003C;-</span><span 
+class="aesltt-10">&#x00A0;function(x)</span><span 
+class="aesltt-10">&#x00A0;10^(0.92</span><span 
+class="aesltt-10">&#x00A0;*</span><span 
+class="aesltt-10">&#x00A0;log10(x)</span><span 
+class="aesltt-10">&#x00A0;-</span><span 
+class="aesltt-10">&#x00A0;0.23)</span>
+<br class="fancyvrb" /><a 
+ id="x1-41r20"></a><span 
+class="aesltt-10">&#x00A0;</span><span 
+class="aesltt-10">&#x00A0;&#x003E;</span><span 
+class="aesltt-10">&#x00A0;mv</span><span 
+class="aesltt-10">&#x00A0;&#x003C;-</span><span 
+class="aesltt-10">&#x00A0;mvplot(z)</span>
+<br class="fancyvrb" /><a 
+ id="x1-43r21"></a><span 
+class="aesltt-10">&#x00A0;</span><span 
+class="aesltt-10">&#x00A0;&#x003E;</span><span 
+class="aesltt-10">&#x00A0;key</span><span 
+class="aesltt-10">&#x00A0;=</span><span 
+class="aesltt-10">&#x00A0;list(text</span><span 
+class="aesltt-10">&#x00A0;=</span><span 
+class="aesltt-10">&#x00A0;list(lab</span><span 
+class="aesltt-10">&#x00A0;=</span><span 
+class="aesltt-10">&#x00A0;c("Date</span><span 
+class="aesltt-10">&#x00A0;range",</span><span 
+class="aesltt-10">&#x00A0;paste(range(z$date),</span>
+<br class="fancyvrb" /><a 
+ id="x1-45r22"></a><span 
+class="aesltt-10">&#x00A0;</span><span 
+class="aesltt-10">&#x00A0;+</span><span 
+class="aesltt-10">&#x00A0;</span><span 
+class="aesltt-10">&#x00A0;</span><span 
+class="aesltt-10">&#x00A0;</span><span 
+class="aesltt-10">&#x00A0;</span><span 
+class="aesltt-10">&#x00A0;collapse</span><span 
+class="aesltt-10">&#x00A0;=</span><span 
+class="aesltt-10">&#x00A0;"</span><span 
+class="aesltt-10">&#x00A0;--</span><span 
+class="aesltt-10">&#x00A0;"))),</span><span 
+class="aesltt-10">&#x00A0;space</span><span 
+class="aesltt-10">&#x00A0;=</span><span 
+class="aesltt-10">&#x00A0;"bottom")</span>
+<br class="fancyvrb" /><a 
+ id="x1-47r23"></a><span 
+class="aesltt-10">&#x00A0;</span><span 
+class="aesltt-10">&#x00A0;&#x003E;</span><span 
+class="aesltt-10">&#x00A0;mv</span><span 
+class="aesltt-10">&#x00A0;=</span><span 
+class="aesltt-10">&#x00A0;update(mv,</span><span 
+class="aesltt-10">&#x00A0;key</span><span 
+class="aesltt-10">&#x00A0;=</span><span 
+class="aesltt-10">&#x00A0;key)</span>
+   </div>
+   <hr class="figure" /><div class="figure" 
+><table class="figure"><tr class="figure"><td class="figure" 
+>
+                                                                  
+
+                                                                  
+<a 
+ id="x1-501"></a>
+                                                                  
+
+                                                                  
+<div class="fancyvrb" id="fancyvrb2">
+<a 
+ id="x1-49r1"></a><span 
+class="aesltt-10">&#x00A0;</span><span 
+class="aesltt-10">&#x00A0;&#x003E;</span><span 
+class="aesltt-10">&#x00A0;plot(mv)</span>
+</div>
+                                                                  
+
+                                                                  
+<!--l. 5036--><p class="noindent" ><object data="vignette-1.svg" width="579.6911 " height="579.6911 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object>
+                                                                  
+
+                                                                  
+<br /> </p><table class="caption" 
+><tr style="vertical-align:baseline;" class="caption"><td class="id">Figure&#x00A0;1: </td><td  
+class="content">Exceedance by month</td></tr></table><!--tex4ht:label?: x1-501 -->
+                                                                  
+
+                                                                  
+   </td></tr></table></div><hr class="endfigure" />
+   <hr class="figure" /><div class="figure" 
+><table class="figure"><tr class="figure"><td class="figure" 
+>
+                                                                  
+
+                                                                  
+<a 
+ id="x1-572"></a>
+                                                                  
+
+                                                                  
+<div class="fancyvrb" id="fancyvrb3">
+<a 
+ id="x1-52r1"></a><span 
+class="aesltt-10">&#x00A0;</span><span 
+class="aesltt-10">&#x00A0;&#x003E;</span><span 
+class="aesltt-10">&#x00A0;fd</span><span 
+class="aesltt-10">&#x00A0;&#x003C;-</span><span 
+class="aesltt-10">&#x00A0;fdplot(z,</span><span 
+class="aesltt-10">&#x00A0;ylab</span><span 
+class="aesltt-10">&#x00A0;=</span><span 
+class="aesltt-10">&#x00A0;list("Flow</span><span 
+class="aesltt-10">&#x00A0;(cfs)",</span><span 
+class="aesltt-10">&#x00A0;cex</span><span 
+class="aesltt-10">&#x00A0;=</span><span 
+class="aesltt-10">&#x00A0;1.5,</span><span 
+class="aesltt-10">&#x00A0;col</span><span 
+class="aesltt-10">&#x00A0;=</span><span 
+class="aesltt-10">&#x00A0;"red"),</span>
+<br class="fancyvrb" /><a 
+ id="x1-54r2"></a><span 
+class="aesltt-10">&#x00A0;</span><span 
+class="aesltt-10">&#x00A0;+</span><span 
+class="aesltt-10">&#x00A0;</span><span 
+class="aesltt-10">&#x00A0;</span><span 
+class="aesltt-10">&#x00A0;</span><span 
+class="aesltt-10">&#x00A0;</span><span 
+class="aesltt-10">&#x00A0;main</span><span 
+class="aesltt-10">&#x00A0;=</span><span 
+class="aesltt-10">&#x00A0;"USGS</span><span 
+class="aesltt-10">&#x00A0;gage</span><span 
+class="aesltt-10">&#x00A0;04015330")</span>
+<br class="fancyvrb" /><a 
+ id="x1-56r3"></a><span 
+class="aesltt-10">&#x00A0;</span><span 
+class="aesltt-10">&#x00A0;&#x003E;</span><span 
+class="aesltt-10">&#x00A0;plot(fd)</span>
+</div>
+                                                                  
+
+                                                                  
+<!--l. 3208--><p class="noindent" ><object data="vignette-2.svg" width="579.6911 " height="579.6911 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object>
+                                                                  
+
+                                                                  
+<br /> </p><table class="caption" 
+><tr style="vertical-align:baseline;" class="caption"><td class="id">Figure&#x00A0;2: </td><td  
+class="content">Flow duration</td></tr></table><!--tex4ht:label?: x1-572 -->
+                                                                  
+
+                                                                  
+   </td></tr></table></div><hr class="endfigure" />
+   <hr class="figure" /><div class="figure" 
+><table class="figure"><tr class="figure"><td class="figure" 
+>
+                                                                  
+
+                                                                  
+<a 
+ id="x1-623"></a>
+                                                                  
+
+                                                                  
+<div class="fancyvrb" id="fancyvrb4">
+<a 
+ id="x1-59r1"></a><span 
+class="aesltt-10">&#x00A0;</span><span 
+class="aesltt-10">&#x00A0;&#x003E;</span><span 
+class="aesltt-10">&#x00A0;ld</span><span 
+class="aesltt-10">&#x00A0;&#x003C;-</span><span 
+class="aesltt-10">&#x00A0;ldplot(z,</span><span 
+class="aesltt-10">&#x00A0;names</span><span 
+class="aesltt-10">&#x00A0;=</span><span 
+class="aesltt-10">&#x00A0;list(pol</span><span 
+class="aesltt-10">&#x00A0;=</span><span 
+class="aesltt-10">&#x00A0;"TSS..mg.L."),</span><span 
+class="aesltt-10">&#x00A0;target</span><span 
+class="aesltt-10">&#x00A0;=</span><span 
+class="aesltt-10">&#x00A0;turb2tss(10))</span>
+<br class="fancyvrb" /><a 
+ id="x1-61r2"></a><span 
+class="aesltt-10">&#x00A0;</span><span 
+class="aesltt-10">&#x00A0;&#x003E;</span><span 
+class="aesltt-10">&#x00A0;plot(ld)</span>
+</div>
+                                                                  
+
+                                                                  
+<!--l. 3650--><p class="noindent" ><object data="vignette-3.svg" width="579.6911 " height="579.6911 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object>
+                                                                  
+
+                                                                  
+<br /> </p><table class="caption" 
+><tr style="vertical-align:baseline;" class="caption"><td class="id">Figure&#x00A0;3: </td><td  
+class="content">Load duration</td></tr></table><!--tex4ht:label?: x1-623 -->
+                                                                  
+
+                                                                  
+   </td></tr></table></div><hr class="endfigure" />
+    
+</body></html> 
+
+                                                                  
+
+

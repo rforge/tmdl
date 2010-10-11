@@ -45,10 +45,24 @@ echo $contents; } ?>
 
 <h2>This project is for you if you are</h2>
 <ul>
-  <li>working on TMDL;</li>
-  <li>tired from doing routine operations in your favorite spreadsheet;</li>
-  <li>not satisfied with charting capabilities of your favorite spreadsheet.</li>
+  <li>working on TMDL</li>
+  <li>tired from doing routine operations in your favorite spreadsheet</li>
+  <li>not satisfied with charting capabilities of your favorite spreadsheet</li>
+  <li>not well familiar (at least at this moment) with <em>R</em> and wonderful package <em>lattice</em>.</li>
 </ul>
+
+<h2>Features</h2>
+<ul>
+  <li>Flow and Load duration curves</li>
+  <li>Monthly variation plot</li>
+  <li>Box plots with mean &amp; median and whiskers at 10<sup>th</sup> and 90<sup>th</sup> percentiles as used in most TMDL studies</li>
+</ul>
+
+<h2>Vignette</h2>
+<p>
+This <a href="vignette">vignette</a> requires SVG enabled browser.
+Firefox should be find, however default IE might not work.
+</p>
 
 <h2>Example plots</h2>
 <img src="fdc.png" border="0" alt="Flow Duration Curve" />
