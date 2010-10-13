@@ -43,9 +43,15 @@ echo $contents; } ?>
 
 <!-- end of project description -->
 
+<h2>Goal</h2>
+<p>
+The goal of this project is to provide easy to use tools
+to facilitate the process of <abbr title="Total Maximum Daily Load">TMDL</abbr> development
+</p>
+
 <h2>This project is for you if you are</h2>
 <ul>
-  <li>working on TMDL</li>
+  <li>working on <a href="http://en.wikipedia.org/wiki/Total_maximum_daily_load">TMDL</a></li>
   <li>tired from doing routine operations in your favorite spreadsheet</li>
   <li>not satisfied with charting capabilities of your favorite spreadsheet</li>
   <li>not well familiar (at least at this moment) with <em>R</em> and wonderful package <em>lattice</em>.</li>
@@ -54,14 +60,15 @@ echo $contents; } ?>
 <h2>Features</h2>
 <ul>
   <li>Flow and Load duration curves</li>
-  <li>Monthly variation plot</li>
-  <li>Box plots with mean &amp; median and whiskers at 10<sup>th</sup> and 90<sup>th</sup> percentiles as used in most TMDL studies</li>
+  <li>Monthly flow variation plot</li>
+  <li>Box plots with mean &amp; median and whiskers at 10<sup>th</sup> and 90<sup>th</sup> percentiles as used in most TMDL studies<br />
+  (Default whiskers of boxplot function in R stretch to 1.5 <abbr title="interquartile range">IQR</abbr>)</li>
 </ul>
 
 <h2>Vignette</h2>
 <p>
-This <a href="vignette">vignette</a> requires SVG enabled browser.
-Firefox should be find, however default IE might not work.
+This <a href="vignette">vignette</a> requires <a href="http://en.wikipedia.org/wiki/Scalable_Vector_Graphics">SVG</a> enabled browser.
+Firefox should be fine, however default Internet Explorer may not work without proper <a href="http://en.wikipedia.org/wiki/Scalable_Vector_Graphics#SVG_and_Microsoft_Internet_Explorer">plugin</a>.
 </p>
 
 <h2>Example plots</h2>
