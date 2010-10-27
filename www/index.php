@@ -74,8 +74,10 @@ Firefox should be fine, however default Internet Explorer may not work without p
 
 <h2>Example plots</h2>
 <img src="fdc.png" border="0" alt="Flow Duration Curve" />
-
+<br />
 <img src="ldc.png" alt="Load Duration Curve" />
+<br />
+<img src="ldc_theme.png" alt="Load Duration Curve with theme" />
 
 <p> The <strong>project summary page</strong> you can find <a href="http://<?php echo $domain; ?>/projects/<?php echo $group_name; ?>/"><strong>here</strong></a>. </p>
 
