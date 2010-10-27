@@ -64,7 +64,6 @@ to facilitate the process of <abbr title="Total Maximum Daily Load">TMDL</abbr> 
   <li>Box plots with mean &amp; median and whiskers at 10<sup>th</sup> and 90<sup>th</sup> percentiles as used in most TMDL studies<br />
   (Default whiskers of boxplot function in R stretch to 1.5 <abbr title="interquartile range">IQR</abbr>)</li>
   <li>MOS can be calculated as % from TMDL or as a difference between TMDL for low and median flows within each hydrological interval</li>
-  <li>WLA for MS4 <b>is not</b> implemented at the moment</li>
 </ul>
 
 <h2>Vignette</h2>
