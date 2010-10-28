@@ -68,8 +68,13 @@ to facilitate the process of <abbr title="Total Maximum Daily Load">TMDL</abbr> 
 
 <h2>Vignette</h2>
 <p>
-This <a href="vignette">vignette</a> requires <a href="http://en.wikipedia.org/wiki/Scalable_Vector_Graphics">SVG</a> enabled browser.
-Firefox should be fine, however default Internet Explorer may not work without proper <a href="http://en.wikipedia.org/wiki/Scalable_Vector_Graphics#SVG_and_Microsoft_Internet_Explorer">plugin</a>.
+  This <a href="vignette">vignette</a> requires <a href="http://en.wikipedia.org/wiki/Scalable_Vector_Graphics">SVG</a> enabled browser.
+  Firefox should be fine, however default Internet Explorer may not work without proper <a href="http://en.wikipedia.org/wiki/Scalable_Vector_Graphics#SVG_and_Microsoft_Internet_Explorer">plugin</a>.
+</p>
+
+<h2>Download</h2>
+<p>
+  For some reason windows binary build is currently broken on R-Forge, so here is some snapshot <a href="tmdl_0.4-0.zip">tmdl_0.4-0.zip</a>
 </p>
 
 <h2>Example plots</h2>
