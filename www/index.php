@@ -78,10 +78,11 @@ to facilitate the process of <abbr title="Total Maximum Daily Load">TMDL</abbr> 
 </p>
 
 <h2>Example plots</h2>
+<h3>Flow duration curve</h3>
 <img src="fdc.png" border="0" alt="Flow Duration Curve" />
-<br />
+<h3>Load duration curve</h3>
 <img src="ldc.png" alt="Load Duration Curve" />
-<br />
+<h3>Load duration curve with custom theme</h3>
 <img src="ldc_theme.png" alt="Load Duration Curve with theme" />
 
 <p> The <strong>project summary page</strong> you can find <a href="http://<?php echo $domain; ?>/projects/<?php echo $group_name; ?>/"><strong>here</strong></a>. </p>
